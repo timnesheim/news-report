@@ -3,6 +3,12 @@
 import psycopg2
 from datetime import datetime
 
+'''
+code used to output list to .txt file (lines 32-34, 62-64, 94-96) taken from
+Stack Overflow:
+https://stackoverflow.com/questions/899103/writing-a-list-to-a-file-with-python
+'''
+
 
 # question 1
 def most_popular_articles():
