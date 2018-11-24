@@ -10,11 +10,11 @@ Download the data here: [NEWS][6166d444]
 
 ## Installation
 Ensure the Vagrant VirtualBox is installed. Save the downloaded data in the vagrant directory that along with the virtual machine. Load the data with the following command:
-<p align=center>**psql -d news -f newsdata.sql**</p>
+**<p align=center>psql -d news -f newsdata.sql</p>**
 
 ## Usage
 The script connects to the database via the Python module **psycopg2**. The line below is an example of how to connect:
-<p align=center>**db = psycopg2.connect("dbname=news")**</p>
+**<p align=center>db = psycopg2.connect("dbname=news")</p>**
 The script also uses the **datetime** module to help format the date value that is returned from the database.
 
 The query used in the second scenario makes use of a view created from the data in the Article table titled **article_pageviews**
